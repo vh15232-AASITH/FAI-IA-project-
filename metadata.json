@@ -1,0 +1,6 @@
+{
+  "name": "Marienbad: Classic Nim & Combinatorial Strategy",
+  "description": "Play the classic mathematical strategy game of Nim across Marienbad, Fibonacci, and custom heap configurations against an optimal Nim-sum solver or local opponent, complete with live binary XOR analysis and endgame puzzles.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
