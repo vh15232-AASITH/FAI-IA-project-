@@ -116,3 +116,6 @@ Below is how the **Live Binary Nim-Sum (XOR) Analyzer** decomposes board states 
    • Remove 1 stone from Heap #1 (1 → 0)
    • Remove 1 stone from Heap #2 (3 → 2)
    • Remove 1 stone from Heap #3 (5 → 4)
+
+
+
