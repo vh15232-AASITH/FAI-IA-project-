@@ -82,3 +82,37 @@ Nim-Sum (2):  0  0  1  0  --> Non-zero (N-Position: Winning Move Available)
 │   └── main.*              # Application entry point
 ├── package.json            # Scripts and dependencies
 └── README.md               # Project documentation
+---
+
+## 🏷️ Header Badges (Place right below your `# Title`)
+
+![Node.js](https://img.shields.io/badge/Node.js-v18%2B-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-Fast_Build-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Game Theory](https://img.shields.io/badge/Combinatorial-Game_Theory-FF6F00?style=for-the-badge)
+![Sprague-Grundy](https://img.shields.io/badge/Algorithm-Bouton_XOR_Solver-00ACC1?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
+
+---
+
+## 🖥️ Live Analyzer & Arena Preview
+
+Below is how the **Live Binary Nim-Sum (XOR) Analyzer** decomposes board states in real time across the 4-bit register (`8 · 4 · 2 · 1`):
+
+```text
+┌─────────────────────────────────────────────────────────────────────────┐
+│ 🎯 CURRENT TURN: PLAYER 1'S TURN               MODE: NORMAL PLAY        │
+├──────────────┬──────────────────┬───────┬───────┬───────┬───────┬───────┤
+│ Heap Index   │ Stones Remaining │ Bit 8 │ Bit 4 │ Bit 2 │ Bit 1 │ Grundy│
+├──────────────┼──────────────────┼───────┼───────┼───────┼───────┼───────┤
+│ Heap #1      │ ●                 │   0   │   0   │   0   │   1   │   1   │
+│ Heap #2      │ ● ● ●             │   0   │   0   │   1   │   1   │   3   │
+│ Heap #3      │ ● ● ● ● ●         │   0   │   1   │   0   │   1   │   5   │
+│ Heap #4      │ ● ● ● ● ● ●       │   0   │   1   │   1   │   0   │   6   │
+├──────────────┴──────────────────┼───────┼───────┼───────┼───────┼───────┤
+│ NIM-SUM (XOR PARITY)            │   0   │   0   │   0   │   1   │ S = 1 │
+└─────────────────────────────────┴───────┴───────┴───────┴───────┴───────┘
+⚡ STATE CLASSIFICATION: N-POSITION (Winning Advantage)
+💡 OPTIMAL WINNING MOVES:
+   • Remove 1 stone from Heap #1 (1 → 0)
+   • Remove 1 stone from Heap #2 (3 → 2)
+   • Remove 1 stone from Heap #3 (5 → 4)
