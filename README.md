@@ -74,3 +74,11 @@ Heap 2 (4) :  0  1  0  0
 Heap 3 (5) :  0  1  0  1
 ------------------------ (XOR)
 Nim-Sum (2):  0  0  1  0  --> Non-zero (N-Position: Winning Move Available)
+├── public/                 # Static assets and icons
+├── src/
+│   ├── components/         # Arena UI, 4-Bit Analyzer, & Custom Board Architect
+│   ├── engine/             # Bouton Solver, XOR calculator, & Misère logic
+│   ├── puzzles/            # Combinatorial Game Theory endgame puzzle definitions
+│   └── main.*              # Application entry point
+├── package.json            # Scripts and dependencies
+└── README.md               # Project documentation
